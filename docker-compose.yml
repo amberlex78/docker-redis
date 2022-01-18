@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  redisadmin:
+    image: erikdubbelboer/phpredisadmin
+    environment:
+      - REDIS_1_HOST=redis
+    ports:
+      - "16379:80"
+
+  redis:
+    image: redis:6.2.6-alpine
+    volumes:
+      - ./data:/data
+    ports:
+      - "6379:6379"
