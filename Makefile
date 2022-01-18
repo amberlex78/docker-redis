@@ -13,3 +13,6 @@ docker-up:
 	docker-compose up -d
 docker-down:
 	docker-compose down --remove-orphans
+
+run:
+	docker-compose exec redis redis-cli

@@ -1,6 +1,6 @@
 # Docker Redis
 
-Setup
+## Setup
 
 ```
 git clone git@github.com:amberlex78/docker-redis.git
@@ -8,13 +8,22 @@ cd docker-redis
 make init
 ```
 
-Log into redis container
+## Log into container
 ```
 docker-compose exec redis redis-cli
 ```
 ```
 127.0.0.1:6379>
 ```
+Or `make run` and type `exit` for exit container
+```
+make run 
+```
+```
+127.0.0.1:6379> exit
+```
+
+## In docker container
 
 For example:
 ```
@@ -25,7 +34,7 @@ OK
 "Hello, World!"
 ```
 
-GUI PHPRedisAdmin
+## GUI phpRedisAdmin
 ```
 http://127.0.0.1:16379
 ```
