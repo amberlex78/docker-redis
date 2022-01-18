@@ -1,5 +1,13 @@
 # Docker Redis
 
+Setup
+
+```
+git clone git@github.com:amberlex78/docker-redis.git
+cd docker-redis
+make init
+```
+
 Log into redis container
 ```
 docker-compose exec redis redis-cli
